@@ -16,7 +16,7 @@ def print_json(data, title=""):
 
 def wait_for_server():
     """Ожидание запуска сервера"""
-    print("⏳ Ожидание запуска сервера...")
+    print("Ожидание запуска сервера...")
     max_attempts = 10
     for attempt in range(max_attempts):
         try:
@@ -384,7 +384,7 @@ def test_api():
         
     except requests.exceptions.RequestException as e:
         print(f"\nОшибка сети: {e}")
-        print("⚠️  Убедитесь, что сервер запущен и доступен")
+        print(" Убедитесь, что сервер запущен и доступен")
     except Exception as e:
         print(f"\nНеожиданная ошибка: {e}")
         import traceback
